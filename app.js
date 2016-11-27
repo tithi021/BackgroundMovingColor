@@ -14,8 +14,7 @@ function input(inputType, DOMElement, callback) {
   });
 }
 function output(element, x, y) {
-  element.textContent = x + ', ' + y;
+  element.textContent = 'rgb(' + x + ', ' + y + ', ' + 100 + ')';
   element.style.backgroundColor = 'rgb(' + x + ', ' + y + ', ' + 100 + ')';
 }
-
 input('mousemove', fullScreen('DIV'), output);
